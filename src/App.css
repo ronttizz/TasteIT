@@ -33,7 +33,7 @@
 .video {
   position: relative;
   width: 100vw;
-  filter: grayscale(1) brightness(0.4);
+  filter: grayscale(0.1) brightness(0.4);
   z-index: -1;
   min-height: 50vh;
   max-height: 75vh;
