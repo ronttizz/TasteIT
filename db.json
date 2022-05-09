@@ -1,0 +1,44 @@
+{
+  "recipes": [
+    {
+      "name": "Pannukakku",
+      "description": "Pannukakku is finnish pancake",
+      "nationality": "finnish",
+      "image-url": "https://www.elinaadasofia.fi/wp-content/uploads/2020/03/pannukakku-1.jpg",
+      "author": "Toni",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "amount": "2dl"
+        },
+        {
+          "ingredient": "milk",
+          "amount": "3dl"
+        }
+      ],
+      "preparations": "Get yourself the ingredients ready",
+      "instructions": "Bake the cake",
+      "id": 1
+    },
+    {
+      "name": "Hernekeitto",
+      "description": "Hernekeitto is a peasoup that is eaten on Thrusdays",
+      "nationality": "finnish",
+      "image-url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Erbsensuppenteller.jpg",
+      "author": "Toni",
+      "ingredients": [
+        {
+          "ingredient": "purkki hernari",
+          "amount": "5dl"
+        },
+        {
+          "ingredient": "water",
+          "amount": "1l"
+        }
+      ],
+      "preparations": "Get yourself a 3 liter cooking pot",
+      "instructions": "Put purkki hernari and water to pot and bring to boil while stirring constantly",
+      "id": 2
+    }
+  ]
+}

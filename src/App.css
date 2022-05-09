@@ -45,6 +45,7 @@
   color: white;
   top: 5vh;
   left: 10vw;
+  margin-right: 5rem;
 }
 
 .tasteit {
@@ -68,6 +69,16 @@
 .card {
   width: max-content;
   height: max-content;
+  border: 1px solid lightgray;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 7px;
+  position: relative;
+}
+.cardflag {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .footer {
