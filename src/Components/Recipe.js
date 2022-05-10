@@ -17,6 +17,8 @@ const Recipe = () => {
       .then((res) => setRecipe(res.data));
   }, []);
 
+  //     console.log(res.data[0].flags.svg)
+
   useEffect(() => {
     axios
       .get("https://restcountries.com/v3.1/name/" + recipe.origin)
