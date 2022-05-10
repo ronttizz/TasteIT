@@ -31,13 +31,13 @@ const Recipe = () => {
       <p>{recipe.author}</p>
       <p>{recipe.imageurl}</p>
       <p>{flag}</p>
-      {recipe.ingredients.map((ingredient) => {
+      {/* {recipe.ingredients.map((ingredient) => {
         return (
           <p>
             {ingredient.amount} - {ingredient.ingredient}
           </p>
         );
-      })}
+      })} */}
       <p>{recipe.preparations}</p>
       <p>{recipe.instructions}</p>
     </div>
