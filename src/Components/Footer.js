@@ -8,7 +8,7 @@ const Footer = () => {
             href="https://www.github.com/ronttizz"
             target="_blank"
             rel="noreferrer"
-            className="link"
+            className="linkactive"
           >
             Toni Nissinen
           </a>
@@ -16,12 +16,12 @@ const Footer = () => {
       </p>
       <p className="small">
         <small>
-          Video by{" "}
+          Homepage video by{" "}
           <a
             href="https://www.pexels.com/video/a-delicious-grilled-meat-in-close-up-view-3192200/"
             target="_blank"
             rel="noreferrer"
-            className="link"
+            className="linkactive"
           >
             Pressmaster
           </a>

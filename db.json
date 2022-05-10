@@ -3,8 +3,8 @@
     {
       "name": "Pannukakku",
       "description": "Pannukakku is finnish pancake",
-      "nationality": "finnish",
-      "image-url": "https://www.elinaadasofia.fi/wp-content/uploads/2020/03/pannukakku-1.jpg",
+      "origin": "Finland",
+      "imageurl": "https://www.elinaadasofia.fi/wp-content/uploads/2020/03/pannukakku-1.jpg",
       "author": "Toni",
       "ingredients": [
         {
@@ -22,9 +22,9 @@
     },
     {
       "name": "Hernekeitto",
-      "description": "Hernekeitto is a peasoup that is eaten on Thrusdays",
-      "nationality": "finnish",
-      "image-url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Erbsensuppenteller.jpg",
+      "description": "Hernekeitto is a peasoup that is eaten on Thursdays, usually with pannukakku",
+      "origin": "Finland",
+      "imageurl": "https://upload.wikimedia.org/wikipedia/commons/1/13/Erbsensuppenteller.jpg",
       "author": "Toni",
       "ingredients": [
         {

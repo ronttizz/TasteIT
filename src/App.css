@@ -26,7 +26,7 @@
 }
 
 .main {
-  height: calc(100vh - 100px);
+  /* height: calc(100vh - 100px); */
   position: relative;
 }
 
@@ -54,11 +54,34 @@
 
 .link {
   text-decoration: none;
-  color: white;
+  color: rgb(210, 210, 210);
 }
 
 .link:hover {
   color: aquamarine;
+}
+
+.linkactive {
+  color: white;
+  text-decoration: none;
+}
+
+.boxcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  border: 1px solid lightgray;
+  width: 18rem;
+  margin: 1rem;
+  padding: 2rem 1rem;
+  box-shadow: 3px 3px 5px grey;
+}
+
+.header {
+  margin: 1rem;
 }
 
 .content {
@@ -66,19 +89,48 @@
   text-align: center;
 }
 
+.recipecontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card {
-  width: max-content;
+  width: 20rem;
   height: max-content;
   border: 1px solid lightgray;
   margin: 1rem;
-  padding: 1rem;
   border-radius: 7px;
   position: relative;
+  box-shadow: 3px 3px 5px grey;
 }
+
+.cardimage {
+  max-width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
 .cardflag {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -12px;
+  right: -12px;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+}
+
+.cardcontent {
+  padding: 1rem;
+}
+
+.readmore {
+  padding: 0.5rem 1rem;
+  background-color: aquamarine;
+  border: none;
+  border-radius: 6px;
+  margin-top: 0.75rem;
+  align-self: flex-end;
 }
 
 .footer {
@@ -86,8 +138,7 @@
   padding: 0.5rem;
   background-color: grey;
   color: white;
-  z-index: 1;
-  position: fixed;
+  position: relative;
   width: 100vw;
 }
 

@@ -1,10 +1,14 @@
-const RecipeCard = () => {
+const RecipeCard = ({ name, description, imageurl, flag }) => {
+  console.log(flag);
   return (
     <div className="card">
-      <div className="cardflag">Flag</div>
-      <h4>Recipe name</h4>
-      <img src="#" alt="#"></img>
-      <p>Description of the recipe</p>
+      <img className="cardflag" src={flag} alt="Flag" />
+      <img src={imageurl} alt={name} className="cardimage" />
+      <div className="cardcontent">
+        <h4>{name}</h4>
+        <p>{description}</p>
+        <button className="readmore">Read more</button>
+      </div>
     </div>
   );
 };

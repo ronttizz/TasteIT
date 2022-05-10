@@ -1,4 +1,5 @@
 import video from "../assets/video/cooking.mp4";
+import Box from "./Box";
 
 const Home = () => {
   return (
@@ -15,6 +16,10 @@ const Home = () => {
       </div>
       <div className="content">
         <h4>Looking for recipes?</h4>
+        <div className="boxcontainer">
+          <Box boxheader="Test box">This is a test box</Box>
+          <Box boxheader="Another box">This is another test box</Box>
+        </div>
       </div>
     </main>
   );
