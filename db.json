@@ -39,6 +39,30 @@
       "preparations": "Get yourself a 3 liter cooking pot",
       "instructions": "Put purkki hernari and water to pot and bring to boil while stirring constantly",
       "id": 2
+    },
+    {
+      "name": "Kaurapuuro",
+      "description": "Kaurapuuro or oat porridge is a common, inexpensive and nutritious breakfast from Finland",
+      "origin": "Finland",
+      "imageurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Kaurapuuro.jpg/500px-Kaurapuuro.jpg",
+      "author": "Toni",
+      "ingredients": [
+        {
+          "ingredient": "oat flakes",
+          "amount": "1dl"
+        },
+        {
+          "ingredient": "water",
+          "amount": "2.5dl"
+        },
+        {
+          "ingredient": "salt",
+          "amount": "1tsp"
+        }
+      ],
+      "preparations": "Get the ingredients ready",
+      "instructions": "Put oat flakes to bowl, pour water on top and microwave for 5min stirring the porridge every now and then",
+      "id": 3
     }
   ]
 }

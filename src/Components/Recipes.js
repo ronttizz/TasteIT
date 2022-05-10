@@ -16,12 +16,7 @@ const Recipes = () => {
       <h1 className="header">Recipes</h1>
       <div className="recipecontainer">
         {recipes.map((item) => {
-          let flagurl = "";
-          axios
-            .get("https://restcountries.com/v3.1/name/" + item.origin)
-            .then((res) => (flagurl = res.data[0].flags.svg));
-          console.log(flagurl);
-          return <RecipeCard {...item} key={item.id} flag={flagurl} />;
+          return <RecipeCard {...item} key={item.id} />;
         })}
       </div>
     </div>
