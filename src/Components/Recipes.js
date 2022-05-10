@@ -15,8 +15,8 @@ const Recipes = () => {
     <div className="main">
       <h1 className="header">Recipes</h1>
       <div className="recipecontainer">
-        {recipes.map((item) => {
-          return <RecipeCard {...item} key={item.id} />;
+        {recipes.map((recipe) => {
+          return <RecipeCard {...recipe} key={recipe.id} />;
         })}
       </div>
     </div>

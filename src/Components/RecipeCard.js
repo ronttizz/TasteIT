@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import axios from "axios";
 
-const RecipeCard = ({ name, description, imageurl, origin }) => {
+const RecipeCard = ({ name, description, imageurl, origin, id }) => {
   const [flag, setFlag] = useState(
     "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/No_flag.svg/225px-No_flag.svg.png?20220314051100"
   );
 
   const axios = require("axios").default;
-  // setFlag(res.data[0].flags.svg)  console.log(res.data[0].flags.svg))
 
   useEffect(() => {
     axios
@@ -22,7 +22,9 @@ const RecipeCard = ({ name, description, imageurl, origin }) => {
       <div className="cardcontent">
         <h4>{name}</h4>
         <p>{description}</p>
-        <button className="readmore">Read more</button>
+        <NavLink to={`${id}`}>
+          <button className="readmore">Read more</button>
+        </NavLink>
       </div>
     </div>
   );

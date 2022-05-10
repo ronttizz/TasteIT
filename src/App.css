@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
 
+/* GLOBAL RESET */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Titillium Web", sans-serif;
 }
+
+/* ********** */
+/* COMMON CSS */
+/* ********** */
 
 .App {
   width: 100%;
@@ -30,6 +36,28 @@
   position: relative;
 }
 
+.link {
+  text-decoration: none;
+  color: rgb(210, 210, 210);
+}
+
+.hover:hover {
+  color: aquamarine;
+}
+
+.link:hover {
+  color: aquamarine;
+}
+
+.linkactive {
+  color: white;
+  text-decoration: none;
+}
+
+/* ************ */
+/* HOMEPAGE CSS */
+/* ************ */
+
 .video {
   position: relative;
   width: 100vw;
@@ -52,33 +80,6 @@
   margin: 5rem 0;
 }
 
-.link {
-  text-decoration: none;
-  color: rgb(210, 210, 210);
-}
-
-.boxlink {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-
-.boxlink:hover {
-  color: rgb(0, 119, 4);
-}
-
-.hover:hover {
-  color: aquamarine;
-}
-
-.link:hover {
-  color: aquamarine;
-}
-
-.linkactive {
-  color: white;
-  text-decoration: none;
-}
-
 .boxcontainer {
   display: flex;
   flex-wrap: wrap;
@@ -93,6 +94,16 @@
   box-shadow: 3px 3px 5px grey;
 }
 
+.boxlink {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.boxlink:hover {
+  color: rgb(0, 119, 4);
+}
+
 .header {
   margin: 1rem;
 }
@@ -101,6 +112,10 @@
   padding: 1.5rem;
   text-align: center;
 }
+
+/* ************** */
+/* BROWSE RECIPES */
+/* ************** */
 
 .recipecontainer {
   display: flex;
@@ -148,6 +163,18 @@
   margin-top: 0.75rem;
   align-self: flex-end;
 }
+
+/* ****************** */
+/* SINGLE RECIPE PAGE */
+/* ****************** */
+
+.recipe {
+  border: 1px solid lightgrey;
+}
+
+/* ************ */
+/* FOOTER STUFF */
+/* ************ */
 
 .footer {
   text-align: center;
