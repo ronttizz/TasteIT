@@ -57,6 +57,19 @@
   color: rgb(210, 210, 210);
 }
 
+.boxlink {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.boxlink:hover {
+  color: rgb(0, 119, 4);
+}
+
+.hover:hover {
+  color: aquamarine;
+}
+
 .link:hover {
   color: aquamarine;
 }
@@ -106,8 +119,11 @@
 
 .cardimage {
   max-width: 100%;
+  max-height: 240px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+  display: block;
+  margin: 0 auto;
 }
 
 .cardflag {
