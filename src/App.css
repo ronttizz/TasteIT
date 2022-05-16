@@ -172,14 +172,12 @@
 /* ****************** */
 
 .recipe {
-  border: 1px solid lightgrey;
   display: flex;
   width: 80vw;
   margin: 1rem auto;
 }
 
 .left-column {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -188,7 +186,6 @@
 }
 
 .right-column {
-  border: 1px solid blue;
   padding: 1rem;
   width: 100%;
 }
