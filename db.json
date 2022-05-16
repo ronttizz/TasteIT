@@ -8,10 +8,12 @@
       "author": "Toni",
       "ingredients": [
         {
+          "id": 1,
           "ingredient": "flour",
           "amount": "2dl"
         },
         {
+          "id": 2,
           "ingredient": "milk",
           "amount": "3dl"
         }
@@ -28,10 +30,12 @@
       "author": "Toni",
       "ingredients": [
         {
+          "id": 1,
           "ingredient": "purkki hernari",
           "amount": "5dl"
         },
         {
+          "id": 2,
           "ingredient": "water",
           "amount": "1l"
         }
@@ -48,14 +52,17 @@
       "author": "Toni",
       "ingredients": [
         {
+          "id": 1,
           "ingredient": "oat flakes",
           "amount": "1dl"
         },
         {
+          "id": 2,
           "ingredient": "water",
           "amount": "2.5dl"
         },
         {
+          "id": 3,
           "ingredient": "salt",
           "amount": "1tsp"
         }

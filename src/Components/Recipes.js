@@ -1,14 +1,12 @@
 import { useEffect, useState } from "react";
 import RecipeCard from "./RecipeCard";
-import axios from "axios";
+import Axios from "axios";
 
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
 
-  const axios = require("axios").default;
-
   useEffect(() => {
-    axios.get("http://localhost:3010/recipes").then((res) => setRecipes(res.data));
+    Axios.get("http://localhost:3010/recipes").then((res) => setRecipes(res.data));
   }, []);
 
   return (

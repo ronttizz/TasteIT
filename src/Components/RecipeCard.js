@@ -1,18 +1,16 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import axios from "axios";
+import Axios from "axios";
 
 const RecipeCard = ({ name, description, imageurl, origin, id }) => {
   const [flag, setFlag] = useState(
     "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/No_flag.svg/225px-No_flag.svg.png?20220314051100"
   );
 
-  const axios = require("axios").default;
-
   useEffect(() => {
-    axios
-      .get("https://restcountries.com/v3.1/name/" + origin)
-      .then((res) => setFlag(res.data[0].flags.svg));
+    Axios.get("https://restcountries.com/v3.1/name/" + origin).then((res) =>
+      setFlag(res.data[0].flags.svg)
+    );
   }, []);
 
   return (

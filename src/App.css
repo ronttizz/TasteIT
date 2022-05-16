@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
 
-/* GLOBAL RESET */
+/* GLOBAL RESET/DECLARATIONS */
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Titillium Web", sans-serif;
+  /* line-height: 1.75rem; */
 }
 
 /* ********** */
@@ -92,6 +93,7 @@
   margin: 1rem;
   padding: 2rem 1rem;
   box-shadow: 3px 3px 5px grey;
+  line-height: 1.75rem;
 }
 
 .boxlink {
@@ -130,6 +132,7 @@
   border-radius: 7px;
   position: relative;
   box-shadow: 3px 3px 5px grey;
+  line-height: 1.75rem;
 }
 
 .cardimage {
@@ -170,6 +173,49 @@
 
 .recipe {
   border: 1px solid lightgrey;
+  display: flex;
+  width: 80vw;
+  margin: 1rem auto;
+}
+
+.left-column {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 1rem;
+  width: 60vw;
+}
+
+.right-column {
+  border: 1px solid blue;
+  padding: 1rem;
+  width: 100%;
+}
+
+.flag {
+  width: 70px;
+  border: 1px solid gray;
+  margin: 1rem;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  border-radius: 50%;
+}
+
+.foodimage {
+  width: 100%;
+}
+
+.table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-top: 0.75rem;
+}
+
+.tablerow {
+  border: 1px solid gray;
+  padding: 0.3rem 1rem;
 }
 
 /* ************ */
