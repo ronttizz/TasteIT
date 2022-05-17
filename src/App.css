@@ -249,12 +249,10 @@ select {
 
 .ingredients {
   flex-direction: row;
-  min-width: 100%;
   justify-content: space-between;
 }
 
 .quantity {
-  width: 100%;
   margin-right: 0.5rem;
 }
 
