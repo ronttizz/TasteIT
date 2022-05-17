@@ -117,40 +117,6 @@
       "preparations": "Heat up grill, gather your ingredients.",
       "instructions": "Cook your patty of choice on side, heat up the bun on both sides, when turning patty add cheese to cooked side, put ketchup, lettuce and tomato to bottom half of the bum, when patty is ready build on top of bottom bum. Add mayo on top bum if you want.",
       "id": 4
-    },
-    {
-      "name": "test",
-      "author": "toni",
-      "description": "test",
-      "origin": "Albania",
-      "imageurl": "https://image.shutterstock.com/image-photo/thanksgiving-dinner-food-fall-festive-260nw-1815160577.jpg",
-      "ingredients": [
-        {
-          "id": 1,
-          "ingredient": "test",
-          "amount": "1"
-        }
-      ],
-      "preparations": "testing",
-      "instructions": "test code",
-      "id": 5
-    },
-    {
-      "name": "12340123401234012340123401234012340120341230123401230412304123401230412304120340",
-      "author": "12349123491234912349123941239412394123941239412349123941293419234192349123491234",
-      "description": "49123491239491234912394192349joifnqejorgoqergboeirgno ioqergn oibqeorgib jlqerngqejpibqnergöjkbqergjöb jqergbj qöbkqergiob köjbqeökjbfqopurgb qjkeögbr buoiqebrg jköbqergök jbqerökjbg oöjegb 4912349123",
-      "origin": "Australia",
-      "imageurl": "https://image.shutterstock.com/image-photo/thanksgiving-dinner-food-fall-festive-260nw-1815160577.jpg",
-      "ingredients": [
-        {
-          "id": 1,
-          "ingredient": "123efd",
-          "amount": "1"
-        }
-      ],
-      "preparations": "234r",
-      "instructions": "wefrwefwef",
-      "id": 6
     }
   ]
 }
