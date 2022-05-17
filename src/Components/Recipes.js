@@ -28,7 +28,7 @@ const Recipes = () => {
           className="search"
           type="text"
           name="search"
-          placeholder="Search recipes by name"
+          placeholder="Search recipes by name or author"
           onChange={search}
         ></input>
       </div>
