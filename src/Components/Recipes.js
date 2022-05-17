@@ -17,7 +17,15 @@ const Recipes = () => {
 
   return (
     <div className="main">
-      <h1 className="header">Recipes</h1>
+      <div className="searchbar">
+        <h1 className="header">Recipes</h1>
+        <input
+          className="search"
+          type="text"
+          name="search"
+          placeholder="Search recipes by name"
+        ></input>
+      </div>
       <div className="recipecontainer">
         {!loading ? (
           recipes.map((recipe) => {
