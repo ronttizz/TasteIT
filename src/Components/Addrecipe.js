@@ -49,7 +49,6 @@ const Addrecipe = () => {
   };
 
   const submitRecipe = (e) => {
-    e.preventDefault();
     Axios.post("http://localhost:3010/recipes", data)
       .then((res) => {
         console.log("Recipe added succesfully", res.status);
