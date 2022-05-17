@@ -7,7 +7,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Titillium Web", sans-serif;
-  /* line-height: 1.75rem; */
 }
 
 /* ********** */
@@ -16,6 +15,10 @@
 
 .App {
   width: 100%;
+}
+
+.wordbreak {
+  overflow-wrap: break-word;
 }
 
 .navBar {
@@ -33,7 +36,6 @@
 }
 
 .main {
-  /* height: calc(100vh - 100px); */
   position: relative;
 }
 
@@ -122,13 +124,14 @@
 .recipecontainer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
   width: 20rem;
   height: max-content;
   border: 1px solid lightgray;
-  margin: 1rem;
+  margin: 3rem;
   border-radius: 7px;
   position: relative;
   box-shadow: 3px 3px 5px grey;
@@ -191,7 +194,7 @@
 }
 
 .flag {
-  width: 70px;
+  width: 4rem;
   border: 1px solid gray;
   margin: 1rem;
   position: absolute;

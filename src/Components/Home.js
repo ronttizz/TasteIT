@@ -33,7 +33,7 @@ const Home = () => {
           <Box boxheader="Adding recipe">
             Do you want to make your own recipe to our database? We'd love to see your
             recipe there so take your time and add your recipe{" "}
-            <NavLink to="/recipes" className="boxlink">
+            <NavLink to="/addrecipe" className="boxlink">
               here!
             </NavLink>
           </Box>

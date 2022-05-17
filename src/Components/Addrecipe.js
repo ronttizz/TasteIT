@@ -10,7 +10,8 @@ const Addrecipe = () => {
     author: "",
     description: "",
     origin: "",
-    imageurl: "",
+    imageurl:
+      "https://image.shutterstock.com/image-photo/thanksgiving-dinner-food-fall-festive-260nw-1815160577.jpg",
     ingredients: [],
     preparations: "",
     instructions: "",
@@ -49,8 +50,11 @@ const Addrecipe = () => {
 
   const submitRecipe = (e) => {
     e.preventDefault();
-    console.log("This will post the recipe!");
-    console.log(data);
+    Axios.post("http://localhost:3010/recipes", data)
+      .then((res) => {
+        console.log("Recipe added succesfully", res.status);
+      })
+      .catch((err) => console.log("Something went wrong with this error: ", err));
   };
 
   return (
@@ -59,11 +63,25 @@ const Addrecipe = () => {
         <h1 className="addrecipeheader">Add new recipe:</h1>
         <div className="formsection">
           <label htmlFor="name">Recipe name:</label>
-          <input type="text" id="name" name="name" onChange={inputData} required />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            onChange={inputData}
+            required
+            maxLength="80"
+          />
         </div>
         <div className="formsection">
           <label htmlFor="author">Author:</label>
-          <input type="text" id="author" name="author" onChange={inputData} />
+          <input
+            type="text"
+            id="author"
+            name="author"
+            onChange={inputData}
+            required
+            maxLength="80"
+          />
         </div>
         <div className="formsection">
           <label htmlFor="origin">Recipe is from:</label>
@@ -83,19 +101,31 @@ const Addrecipe = () => {
         </div>
         <div className="formsection">
           <label htmlFor="image">Image url:</label>
-          <input type="text" id="image" name="imageurl" onChange={inputData}></input>
+          <input
+            type="text"
+            id="image"
+            name="imageurl"
+            onChange={inputData}
+            placeholder="Paste image URL, leave empty if you dont want to add a picture"
+          ></input>
         </div>
         <div className="formsection">
           <label htmlFor="description">Description:</label>
-          <textarea name="description" id="description" onChange={inputData} />
+          <textarea
+            name="description"
+            id="description"
+            onChange={inputData}
+            required
+            maxLength="200"
+          />
         </div>
         <div className="formsection">
           <label htmlFor="preparations">Preparations:</label>
-          <textarea name="preparations" id="preparations" onChange={inputData} />
+          <textarea name="preparations" id="preparations" onChange={inputData} required />
         </div>
 
         <div className="formsection">
-          <label>Ingredients</label>
+          <label>Ingredients:</label>
 
           {Array.from(Array(numberOfIngredients), () => 0).map((_, i) => {
             return (
@@ -128,7 +158,7 @@ const Addrecipe = () => {
         </div>
         <div className="formsection">
           <label htmlFor="instructions">Instructions:</label>
-          <textarea id="instructions" name="instructions" onChange={inputData} />
+          <textarea id="instructions" name="instructions" onChange={inputData} required />
         </div>
         <input type="submit" className="button" value="Submit recipe" />
       </form>

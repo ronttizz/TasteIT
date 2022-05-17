@@ -18,8 +18,8 @@ const RecipeCard = ({ name, description, imageurl, origin, id }) => {
       <img className="cardflag" src={flag} alt="Flag" />
       <img src={imageurl} alt={name} className="cardimage" />
       <div className="cardcontent">
-        <h4>{name}</h4>
-        <p>{description}</p>
+        <h4 className="wordbreak">{name}</h4>
+        <p className="wordbreak">{description}</p>
         <NavLink to={`${id}`}>
           <button className="readmore">Read more</button>
         </NavLink>
